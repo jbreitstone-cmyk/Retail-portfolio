@@ -1,0 +1,55 @@
+# Netlify configuration — Retail portfolio
+#
+# This site serves three views from one repo:
+#   - Apex / portfolio domain: shows the landing page (index.html) with tiles
+#     linking to each property dashboard.
+#   - 68-100.<your-domain>:    serves /68-100/index.html as the root of the host
+#   - commack.<your-domain>:   serves /commack/index.html as the root of the host
+#
+# Set up two custom subdomains in Netlify (Site settings → Domain management
+# → Add domain alias) pointing the same site at:
+#     - 68-100.<your-domain>.com
+#     - commack.<your-domain>.com
+# The redirect rules below detect the host and rewrite the path accordingly.
+
+[build]
+  publish = "."
+
+# 68-100 Old Riverhead Rd subdomain → serve the 68-100 dashboard at the root
+[[redirects]]
+  from = "/*"
+  to = "/68-100/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["68-100.hreaportfolio.com", "68-100.netlify.app", "riverhead.hreaportfolio.com"]}
+
+# Commack subdomain → serve the Commack dashboard at the root
+[[redirects]]
+  from = "/*"
+  to = "/commack/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["commack.hreaportfolio.com", "commack.netlify.app"]}
+
+# Friendly path-based routing (works on any domain) — these map common short URLs
+[[redirects]]
+  from = "/68-100"
+  to = "/68-100/"
+  status = 301
+
+[[redirects]]
+  from = "/commack"
+  to = "/commack/"
+  status = 301
+
+# Cache headers — the dashboards are large (~600 KB each) but mostly static JSON
+# embedded in HTML; cache aggressively for snappy reloads.
+[[headers]]
+  for = "/68-100/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/commack/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"

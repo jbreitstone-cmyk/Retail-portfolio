@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HREA Retail Portfolio — Property Dashboards</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); min-height: 100vh; }
+  .card { transition: all 0.2s ease; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(15,23,42,0.12); }
+</style>
+</head>
+<body class="text-slate-800">
+<div class="max-w-6xl mx-auto p-8">
+
+  <header class="text-center mb-12 pt-8">
+    <h1 class="text-5xl font-bold text-slate-900 mb-3">Retail Portfolio</h1>
+    <p class="text-xl text-slate-600">Hildreth Real Estate Advisors · Investor + Operator Dashboards</p>
+    <p class="text-xs text-slate-400 mt-2">Live data sourced from AppFolio · refreshed via the operator pipeline</p>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+    <a href="/68-100/" class="card block bg-white p-8 rounded-2xl shadow-md border border-slate-200 cursor-pointer">
+      <div class="flex items-start justify-between mb-4">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900">68-100 Old Riverhead Rd</h2>
+          <p class="text-slate-500 mt-1">Westhampton Beach, NY 11978</p>
+        </div>
+        <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-bold">RED</span>
+      </div>
+      <div class="grid grid-cols-2 gap-3 mt-6 text-sm">
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Units</div>
+          <div class="font-bold text-lg">15</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Total SF</div>
+          <div class="font-bold text-lg">25,433</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Property Type</div>
+          <div class="font-bold text-sm">Commercial Multi-Tenant</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">AppFolio ID</div>
+          <div class="font-bold text-sm">179</div>
+        </div>
+      </div>
+      <div class="mt-6 text-blue-600 font-semibold">Open dashboard →</div>
+    </a>
+
+    <a href="/commack/" class="card block bg-white p-8 rounded-2xl shadow-md border border-slate-200 cursor-pointer">
+      <div class="flex items-start justify-between mb-4">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900">193 + 231 Commack Rd</h2>
+          <p class="text-slate-500 mt-1">Commack, NY 11725</p>
+        </div>
+        <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold">GREEN</span>
+      </div>
+      <div class="grid grid-cols-2 gap-3 mt-6 text-sm">
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Units</div>
+          <div class="font-bold text-lg">21</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Total SF</div>
+          <div class="font-bold text-lg">29,200</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">Property Type</div>
+          <div class="font-bold text-sm">Retail + Apartments</div>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-lg">
+          <div class="text-xs text-slate-500 uppercase">AppFolio IDs</div>
+          <div class="font-bold text-sm">172 + 173</div>
+        </div>
+      </div>
+      <div class="mt-6 text-blue-600 font-semibold">Open dashboard →</div>
+    </a>
+
+  </div>
+
+  <footer class="text-center text-xs text-slate-400 mt-16 pb-8">
+    <p>Each property is also accessible at its own subdomain (configured via Netlify):</p>
+    <p class="mt-2 font-mono"><a href="/68-100/" class="hover:text-blue-600">68-100.&lt;your-domain&gt;</a> · <a href="/commack/" class="hover:text-blue-600">commack.&lt;your-domain&gt;</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
