@@ -71,6 +71,24 @@ PROPERTIES = [
         "headline": "Livingston retail + car wash + 13 office suites — 100% leased",
         "units": 19, "sqft": 27065,
     },
+    {
+        "folder": "3 Madison St",
+        "name": "3 Madison St",
+        "city": "Sag Harbor, NY",
+        "slug": "3-madison",
+        "appfolio_ids": "111",
+        "headline": "Sag Harbor village — Love Shack Fancy anchor + Sag Pizza; 2nd fl apt vacant",
+        "units": 4, "sqft": 4468,
+    },
+    {
+        "folder": "11 Madison St",
+        "name": "11 Madison St",
+        "city": "Sag Harbor, NY",
+        "slug": "11-madison",
+        "appfolio_ids": "139",
+        "headline": "Sag Harbor village — DOEN retail anchor + 2 apartments; 100% leased",
+        "units": 3, "sqft": 3325,
+    },
 ]
 
 

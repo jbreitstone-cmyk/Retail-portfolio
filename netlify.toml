@@ -63,6 +63,22 @@
   force = true
   conditions = {Host = ["107-mt-pleasant.hreaportfolio.com", "107-mt-pleasant.netlify.app", "livingston.hreaportfolio.com"]}
 
+# 3 Madison St (Sag Harbor) subdomain
+[[redirects]]
+  from = "/*"
+  to = "/3-madison/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["3-madison.hreaportfolio.com", "3-madison.netlify.app"]}
+
+# 11 Madison St (Sag Harbor) subdomain
+[[redirects]]
+  from = "/*"
+  to = "/11-madison/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["11-madison.hreaportfolio.com", "11-madison.netlify.app"]}
+
 # Friendly path-based routing (works on any domain) — these map common short URLs
 [[redirects]]
   from = "/68-100"
@@ -92,6 +108,16 @@
 [[redirects]]
   from = "/107-mt-pleasant"
   to = "/107-mt-pleasant/"
+  status = 301
+
+[[redirects]]
+  from = "/3-madison"
+  to = "/3-madison/"
+  status = 301
+
+[[redirects]]
+  from = "/11-madison"
+  to = "/11-madison/"
   status = 301
 
 [[redirects]]
@@ -133,5 +159,15 @@
 
 [[headers]]
   for = "/107-mt-pleasant/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/3-madison/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/11-madison/*"
   [headers.values]
     Cache-Control = "public, max-age=300, must-revalidate"
