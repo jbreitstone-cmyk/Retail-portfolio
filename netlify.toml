@@ -47,6 +47,14 @@
   force = true
   conditions = {Host = ["476-montauk.hreaportfolio.com", "476-montauk.netlify.app", "easthampton.hreaportfolio.com"]}
 
+# Amagansett (136 Main + 11 Indian Wells) subdomain → serve the amagansett dashboard
+[[redirects]]
+  from = "/*"
+  to = "/amagansett/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["amagansett.hreaportfolio.com", "amagansett.netlify.app"]}
+
 # Friendly path-based routing (works on any domain) — these map common short URLs
 [[redirects]]
   from = "/68-100"
@@ -68,6 +76,11 @@
   to = "/476-montauk/"
   status = 301
 
+[[redirects]]
+  from = "/amagansett"
+  to = "/amagansett/"
+  status = 301
+
 # Cache headers — the dashboards are large (~600 KB each) but mostly static JSON
 # embedded in HTML; cache aggressively for snappy reloads.
 [[headers]]
@@ -87,5 +100,10 @@
 
 [[headers]]
   for = "/476-montauk/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/amagansett/*"
   [headers.values]
     Cache-Control = "public, max-age=300, must-revalidate"
