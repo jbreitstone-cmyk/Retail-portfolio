@@ -55,6 +55,14 @@
   force = true
   conditions = {Host = ["amagansett.hreaportfolio.com", "amagansett.netlify.app"]}
 
+# 107 E Mount Pleasant Ave (Livingston, NJ) subdomain → serve the 107-mt-pleasant dashboard
+[[redirects]]
+  from = "/*"
+  to = "/107-mt-pleasant/:splat"
+  status = 200
+  force = true
+  conditions = {Host = ["107-mt-pleasant.hreaportfolio.com", "107-mt-pleasant.netlify.app", "livingston.hreaportfolio.com"]}
+
 # Friendly path-based routing (works on any domain) — these map common short URLs
 [[redirects]]
   from = "/68-100"
@@ -81,6 +89,11 @@
   to = "/amagansett/"
   status = 301
 
+[[redirects]]
+  from = "/107-mt-pleasant"
+  to = "/107-mt-pleasant/"
+  status = 301
+
 # Cache headers — the dashboards are large (~600 KB each) but mostly static JSON
 # embedded in HTML; cache aggressively for snappy reloads.
 [[headers]]
@@ -105,5 +118,10 @@
 
 [[headers]]
   for = "/amagansett/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/107-mt-pleasant/*"
   [headers.values]
     Cache-Control = "public, max-age=300, must-revalidate"
