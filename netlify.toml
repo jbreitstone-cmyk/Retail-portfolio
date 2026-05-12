@@ -94,6 +94,16 @@
   to = "/107-mt-pleasant/"
   status = 301
 
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 301
+
+[[redirects]]
+  from = "/summary"
+  to = "/portfolio.html"
+  status = 301
+
 # Cache headers — the dashboards are large (~600 KB each) but mostly static JSON
 # embedded in HTML; cache aggressively for snappy reloads.
 [[headers]]

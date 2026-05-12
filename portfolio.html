@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HREA Retail Portfolio — Summary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+    .kpi { background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="max-w-7xl mx-auto p-6">
+    <header class="mb-8 pb-6 border-b-2 border-slate-300">
+      <h1 class="text-4xl font-bold text-slate-900">HREA Retail Portfolio — Summary</h1>
+      <p class="text-slate-500 mt-2">Hildreth Real Estate Advisors · 6 commercial properties across Long Island &amp; Northern NJ · May 11, 2026</p>
+      <p class="mt-3"><a href="/" class="text-blue-700 hover:underline">← Back to property tiles</a></p>
+    </header>
+
+    <!-- Portfolio KPI tiles -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div class="kpi p-5 rounded-xl shadow-sm border border-slate-200">
+        <div class="text-xs uppercase text-slate-500 font-semibold tracking-wide">Stabilized NOI</div>
+        <div class="text-3xl font-bold text-emerald-700 mt-1">$4.82M</div>
+        <div class="text-xs text-slate-500 mt-1">T12 actual: $2.18M</div>
+      </div>
+      <div class="kpi p-5 rounded-xl shadow-sm border border-slate-200">
+        <div class="text-xs uppercase text-slate-500 font-semibold tracking-wide">Mid Valuation</div>
+        <div class="text-3xl font-bold text-blue-700 mt-1">$69.66M</div>
+        <div class="text-xs text-slate-500 mt-1">Range: $65.75M – $74.10M</div>
+      </div>
+      <div class="kpi p-5 rounded-xl shadow-sm border border-slate-200">
+        <div class="text-xs uppercase text-slate-500 font-semibold tracking-wide">Implied Equity (mid)</div>
+        <div class="text-3xl font-bold text-blue-700 mt-1">$49.35M</div>
+        <div class="text-xs text-slate-500 mt-1">Net of $20.31M in mortgages</div>
+      </div>
+      <div class="kpi p-5 rounded-xl shadow-sm border border-slate-200">
+        <div class="text-xs uppercase text-slate-500 font-semibold tracking-wide">Portfolio TVPI (MOIC)</div>
+        <div class="text-3xl font-bold text-emerald-700 mt-1">3.16x</div>
+        <div class="text-xs text-slate-500 mt-1">DPI 0.02x + RVPI 3.14x</div>
+      </div>
+    </div>
+
+    <!-- Sources of capital -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
+      <h2 class="text-lg font-bold mb-4">Sources of Capital · Returns to Date</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Equity Contributed</div>
+          <div class="text-2xl font-bold mt-1">$15.74M</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">1st Mortgage Balances</div>
+          <div class="text-2xl font-bold mt-1">$20.31M</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Total All-In Basis</div>
+          <div class="text-2xl font-bold mt-1">$36.05M</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Distributions Paid</div>
+          <div class="text-2xl font-bold mt-1 text-emerald-700">$337K</div>
+        </div>
+      </div>
+      <div class="mt-5 pt-5 border-t border-slate-200 grid grid-cols-3 gap-6 text-sm">
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Unrealized Gain (vs. all-in)</div>
+          <div class="text-xl font-bold mt-1 text-emerald-700">$33.95M</div>
+          <div class="text-xs text-slate-500 mt-1">Implied equity $49.35M + distributions $337K − equity $15.74M</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Stabilized NOI / Total Basis</div>
+          <div class="text-xl font-bold mt-1">13.36%</div>
+          <div class="text-xs text-slate-500 mt-1">Yield-on-cost (stabilized basis)</div>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-slate-500 font-semibold">Properties · Units · SF</div>
+          <div class="text-xl font-bold mt-1">6 props · 88 units · 136,830 SF</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Per-property table -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8 overflow-x-auto">
+      <h2 class="text-lg font-bold mb-4">Per-Property Detail</h2>
+      <table class="w-full text-sm">
+        <thead class="bg-slate-100 text-slate-600">
+          <tr class="border-b-2 border-slate-300">
+            <th class="py-2 px-3 text-left">Property</th>
+            <th class="py-2 px-3 text-right">Size</th>
+            <th class="py-2 px-3 text-right">T12 Revenue</th>
+            <th class="py-2 px-3 text-right">T12 NOI</th>
+            <th class="py-2 px-3 text-right">Stab. Revenue</th>
+            <th class="py-2 px-3 text-right">Stab. NOI</th>
+            <th class="py-2 px-3 text-right">Cap Range</th>
+            <th class="py-2 px-3 text-right">Mid Value</th>
+            <th class="py-2 px-3 text-right">Mortgage</th>
+            <th class="py-2 px-3 text-right">Equity In</th>
+            <th class="py-2 px-3 text-right">Distrib.</th>
+            <th class="py-2 px-3 text-right">TVPI</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/68-100/" class="font-semibold text-blue-700 hover:underline">68-100 Old Riverhead Rd</a>
+    <div class="text-xs text-slate-500">Westhampton Beach, NY · AppFolio 179</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">15 units<br>25,433 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$542K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$52K</td>
+  <td class="py-3 px-3 text-right font-mono">$1.19M</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$984K</td>
+  <td class="py-3 px-3 text-right text-xs">6.50% – 7.50%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$14.06M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($5.00M)</td>
+  <td class="py-3 px-3 text-right font-mono">$4.18M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">—</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">2.17x</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/commack/" class="font-semibold text-blue-700 hover:underline">193 + 231 Commack Rd</a>
+    <div class="text-xs text-slate-500">Commack, NY · AppFolio 172 + 173</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">21 units<br>29,200 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$951K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$592K</td>
+  <td class="py-3 px-3 text-right font-mono">$1.03M</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$753K</td>
+  <td class="py-3 px-3 text-right text-xs">6.50% – 7.50%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$10.76M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($5.30M)</td>
+  <td class="py-3 px-3 text-right font-mono">$2.54M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$156K</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">2.21x</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/patchogue/" class="font-semibold text-blue-700 hover:underline">350 E Main St</a>
+    <div class="text-xs text-slate-500">Patchogue, NY · AppFolio 142</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">15 units<br>27,338 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$647K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$319K</td>
+  <td class="py-3 px-3 text-right font-mono">$1.40M</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$1.10M</td>
+  <td class="py-3 px-3 text-right text-xs">7.25% – 7.75%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$14.73M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($-172K)</td>
+  <td class="py-3 px-3 text-right font-mono">—</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$33K</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">0.00x</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/476-montauk/" class="font-semibold text-blue-700 hover:underline">476 Montauk Highway</a>
+    <div class="text-xs text-slate-500">East Hampton, NY · AppFolio 182</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">5 units<br>10,423 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$183K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$88K</td>
+  <td class="py-3 px-3 text-right font-mono">$374K</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$327K</td>
+  <td class="py-3 px-3 text-right text-xs">5.75% – 6.50%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$5.33M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($2.41M)</td>
+  <td class="py-3 px-3 text-right font-mono">$2.29M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">—</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">1.27x</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/amagansett/" class="font-semibold text-blue-700 hover:underline">136 Main St + 11 Indian Wells</a>
+    <div class="text-xs text-slate-500">Amagansett, NY · AppFolio 109 + 114</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">13 units<br>17,371 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$888K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$684K</td>
+  <td class="py-3 px-3 text-right font-mono">$1.13M</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$943K</td>
+  <td class="py-3 px-3 text-right text-xs">5.75% – 6.50%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$15.40M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($5.59M)</td>
+  <td class="py-3 px-3 text-right font-mono">$4.69M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$118K</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">2.12x</td>
+</tr>
+<tr class="border-b border-slate-200 hover:bg-slate-50">
+  <td class="py-3 px-3">
+    <a href="/107-mt-pleasant/" class="font-semibold text-blue-700 hover:underline">107 E Mount Pleasant Ave</a>
+    <div class="text-xs text-slate-500">Livingston, NJ · AppFolio 112</div>
+  </td>
+  <td class="py-3 px-3 text-right text-xs text-slate-600">19 units<br>27,065 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$626K</td>
+  <td class="py-3 px-3 text-right font-mono font-semibold">$450K</td>
+  <td class="py-3 px-3 text-right font-mono">$808K</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-emerald-700">$703K</td>
+  <td class="py-3 px-3 text-right text-xs">7.00% – 8.00%</td>
+  <td class="py-3 px-3 text-right font-mono font-bold text-blue-700">$9.38M</td>
+  <td class="py-3 px-3 text-right font-mono text-slate-600">($2.18M)</td>
+  <td class="py-3 px-3 text-right font-mono">$2.04M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$30K</td>
+  <td class="py-3 px-3 text-right font-bold text-emerald-700">3.55x</td>
+</tr>
+          
+<tr class="bg-slate-100 font-bold border-t-2 border-slate-400">
+  <td class="py-3 px-3">PORTFOLIO TOTAL</td>
+  <td class="py-3 px-3 text-right text-xs">88 units<br>136,830 SF</td>
+  <td class="py-3 px-3 text-right font-mono">$3.84M</td>
+  <td class="py-3 px-3 text-right font-mono">$2.18M</td>
+  <td class="py-3 px-3 text-right font-mono">$5.93M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$4.82M</td>
+  <td class="py-3 px-3 text-right text-xs">—</td>
+  <td class="py-3 px-3 text-right font-mono text-blue-700">$69.66M</td>
+  <td class="py-3 px-3 text-right font-mono">($20.31M)</td>
+  <td class="py-3 px-3 text-right font-mono">$15.74M</td>
+  <td class="py-3 px-3 text-right font-mono text-emerald-700">$337K</td>
+  <td class="py-3 px-3 text-right text-emerald-700">3.16x</td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Property highlights cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+
+      <a href="/68-100/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">68-100 Old Riverhead Rd</h3>
+            <p class="text-xs text-slate-500">Westhampton Beach, NY</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">2.17x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">Hamptons retail — multi-unit renovation almost complete; Hamptons Endoscopy, Gluckmans, BJJ signed</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$984K</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$14.06M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$9.06M</div>
+          </div>
+        </div>
+      </a>
+      <a href="/commack/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">193 + 231 Commack Rd</h3>
+            <p class="text-xs text-slate-500">Commack, NY</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">2.21x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">Steady-state Long Island retail — 95% leased; ETS Bagels + Atelier + Guac Time step-ups in flight</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$753K</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$10.76M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$5.46M</div>
+          </div>
+        </div>
+      </a>
+      <a href="/patchogue/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">350 E Main St</h3>
+            <p class="text-xs text-slate-500">Patchogue, NY</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">0.00x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">Patchogue Main Street mixed-use retail</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$1.10M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$14.73M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$14.90M</div>
+          </div>
+        </div>
+      </a>
+      <a href="/476-montauk/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">476 Montauk Highway</h3>
+            <p class="text-xs text-slate-500">East Hampton, NY</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">1.27x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">East Hampton retail — 100% leased; Chen's Garden + EH Vacuum repricing 7/1/2026</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$327K</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$5.33M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$2.92M</div>
+          </div>
+        </div>
+      </a>
+      <a href="/amagansett/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">136 Main St + 11 Indian Wells</h3>
+            <p class="text-xs text-slate-500">Amagansett, NY</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">2.12x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">Amagansett village mixed-use — Sett Coffee, Cosmic Studios, La Parlour anchor</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$943K</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$15.40M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$9.81M</div>
+          </div>
+        </div>
+      </a>
+      <a href="/107-mt-pleasant/" class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 hover:shadow-md transition-shadow">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">107 E Mount Pleasant Ave</h3>
+            <p class="text-xs text-slate-500">Livingston, NJ</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-bold text-emerald-700">3.55x</div>
+            <div class="text-xs text-slate-500">TVPI</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">Livingston retail + car wash + 13 office suites — 100% leased</p>
+        <div class="grid grid-cols-3 gap-2 text-xs">
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Stab. NOI</div>
+            <div class="font-bold">$703K</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Value</div>
+            <div class="font-bold">$9.38M</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded">
+            <div class="text-slate-500">Equity</div>
+            <div class="font-bold">$7.19M</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <footer class="text-center text-xs text-slate-400 mt-12 pb-8 border-t border-slate-200 pt-6">
+      <p>Each property has its own dashboard, investor PDF, and live data feed from AppFolio.</p>
+      <p class="mt-2">Valuations are internal management estimates based on stabilized NOI and prevailing market cap rates. Numbers are illustrative, not appraisals.</p>
+      <p class="mt-2 text-slate-300">Generated May 11, 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
